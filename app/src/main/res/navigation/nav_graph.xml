@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentMain">
+
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="com.example.finalexam_300307958.FragmentMain"
+        android:label="fragment_main_fragment"
+        tools:layout="@layout/fragment_main_fragment" >
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmentRegistration"
+            app:destination="@id/fragmentRegistration" />
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmentSearchAirbnb"
+            app:destination="@id/fragmentSearchAirbnb" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSearchAirbnb"
+        android:name="com.example.finalexam_300307958.FragmentSearchAirbnb"
+        android:label="fragment_search_airbnb"
+        tools:layout="@layout/fragment_search_airbnb" >
+        <action
+            android:id="@+id/action_fragmentSearchAirbnb_to_fragmentMain"
+            app:destination="@id/fragmentMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentRegistration"
+        android:name="com.example.finalexam_300307958.FragmentRegistration"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" />
+    <fragment
+        android:id="@+id/fragmentSearch"
+        android:name="com.example.finalexam_300307958.FragmentSearch"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+</navigation>
